@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-    <Menu/>
+    
       <Routes>
         <Route exact path="/" element={<Navigate replace to="/accueil" />} />
         <Route path="accueil" element={<Home/>}/> 

@@ -1,18 +1,46 @@
 import React from "react";
 import Menu from "../components/menu/Menu.component";
 import ImgBG from '../../src/images/imgBG.png';
+import CVFile from '../cv/CV AC DEVELOPPEUSE WEB.pdf';
+import '../App.css';
+
+
 
 const Home = () => {
+
+    const handleDowload = () => {
+        window.open(CVFile, '_blank');
+    }
     
     return ( 
     
         <div className="flex">
-         <Menu/> 
+                <Menu/> 
+                {/* backgroundImage */}
+            <div className="flex-1 bg-cover bg-black relative" style={{backgroundImage: `url(${ImgBG})`}}>
+                {/* background opacity */}
+                <div className="absolute inset-0 bg-opacity-50 bg-black">
+                    {/* block nom,prénom et fonction */}
+                    <div className="mt-28 ml-10">
+                        <h1 className="text-quaternary text-4xl font-normal" style={{fontFamily:'Poppins-Regular'}}>
+                            Aïssé Camara
+                        </h1>
+                        <h2 className="text-quaternary text-5xl font-semibold italic" style={{fontFamily:'Poppins-Semibold'}}>
+                            Développeuse web
+                        </h2>
+                    </div>
+                    {/* text de présentation */}
+                    <div className="w-3/5 mt-24 ml-10">
 
-         <div className="flex-1 bg-cover bg-black relative" style={{backgroundImage: `url(${ImgBG})`}}>
-            <div className="absolute inset-0 bg-opacity-50 bg-black"></div>
-            ggg
-         </div>
+                    <p className="text-quaternary text-xl" style={{fontFamily:'Poppins-Regular'}}>
+                        Bienvenue dans mon portfolio en tant que développeuse web passionnée ! Je suis dévouée à créer des expériences en ligne uniques et fonctionnelles. Parcourez mes projets variés qui allient créativité, code et innovation. Je suis ravie de partager avec vous mon parcours et mes compétences techniques. Préparez-vous à plonger dans le monde dynamique du développement web !  
+                    </p>
+                    </div>
+                    <button onClick={handleDowload} className="w-64 h-20 bg-quaternary rounded-3xl shadow-md text-secondary font-semibold text-xl mt-24  ml-10" style={{fontFamily:'Poppins-Semibold'}}>
+                        Télécharger mon CV
+                    </button>
+                </div>
+            </div>
         </div>
     
     );

@@ -12,7 +12,7 @@ import copyright from '../../icons/Copyright.svg';
 
 const Menu = () => {
     return ( 
-    <nav className="bg-primary w-1/4 h-full">
+    <nav className="bg-primary w-1/4 h-screen">
         {/* div image et nom,prenom */}
         <div className="grid justify-items-center gap-8 ">
             <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4" />
@@ -48,25 +48,25 @@ const Menu = () => {
             </ul>
         </div>
         {/* RESEAUX SOCIAUX */}
-        <div className="flex flex-row gap-12 justify-center mt-20 mb-12">
-            <div className="w-16 h-16 bg-quaternary rounded-full grid place-items-center ">
+        <div className="flex flex-row gap-12 justify-center mt-20 mb-5">
+            <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
                 <a href="./" className="  ">
                     <img src={github} alt="github svg"  />
                 </a>
             </div>
-            <div className="w-16 h-16 bg-quaternary rounded-full grid place-items-center ">
+            <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
                 <a href="./">
                     <img src={twitter} alt="twitter svg" />
                 </a>
             </div>
-            <div className="w-16 h-16 bg-quaternary rounded-full grid place-items-center ">
+            <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
                 <a href="./">
                     <img src={linkedin} alt="linkedin svg" />
                 </a>
             </div>
         </div>
         {/* copyryght */}
-        <div className="flex flex-row gap-2 justify-center pb-8 ">
+        <div className="flex flex-row gap-2   justify-center  ">
             <img src={copyright} alt="copyright svg" />
             <span className="text-quaternary text-xs" style={{fontFamily:'Poppins-Regular'}}>copyright,Aïssé Camara- 2023</span>
         </div>

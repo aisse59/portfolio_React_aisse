@@ -1,60 +1,61 @@
+
 const Categories = [
     {
         id:1,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../').default,
         lien : "./",
-        Category : "React"
+        category : "React"
     },
     {
-        id:1,
+        id:2,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../images/dev.jpg').default,
         lien : "./",
-        Category : "Symfony"
+        category : "Symfony"
     },
     {
-        id:1,
+        id:3,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../images/dev.jpg').default,
         lien : "./",
-        Category : "Javascript"
+        category : "Javascript"
     },
     {
-        id:1,
+        id:4,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../images/dev.jpg').default,
         lien : "./",
-        Category : "React"
+        category : "React"
     },
     {
-        id:1,
+        id:5,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../images/dev.jpg').default,
         lien : "./",
-        Category : "React"
+        category : "React"
     },
     {
-        id:1,
+        id:6,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../images/dev.jpg').default,
         lien : "./",
-        Category : "React"
+        category : "React"
     },
     {
-        id:1,
+        id:7,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../images/dev.jpg').default,
         lien : "./",
-        Category : "React"
+        category : "React"
     },
     {
-        id:1,
+        id:8,
         title: "Nom du projet",
-        image : "./",
+        image : require('../../images/dev.jpg').default,
         lien : "./",
-        Category : "CMS"
-    },
+        category : "CMS"
+    }
 ]
  
 export default Categories ;

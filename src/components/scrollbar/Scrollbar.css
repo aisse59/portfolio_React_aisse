@@ -1,0 +1,8 @@
+/* index.css */
+.hide-scrollbar::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem; /* Ajustez la largeur selon vos besoins */
+    background-color: transparent;
+  }
+  
+  

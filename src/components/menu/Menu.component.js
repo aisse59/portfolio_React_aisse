@@ -12,7 +12,10 @@ import copyright from '../../icons/Copyright.svg';
 
 const Menu = () => {
     return ( 
-    <nav className="bg-primary w-1/4 h-screen">
+        
+    <nav className="bg-primary w-1/4 h-screen ">
+        <div className="fixed bg-primary w-1/4 h-screen ">
+
         {/* div image et nom,prenom */}
         <div className="grid justify-items-center gap-8 ">
             <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4" />
@@ -69,6 +72,7 @@ const Menu = () => {
         <div className="flex flex-row gap-2   justify-center  ">
             <img src={copyright} alt="copyright svg" />
             <span className="text-quaternary text-xs" style={{fontFamily:'Poppins-Regular'}}>copyright,Aïssé Camara- 2023</span>
+        </div>
         </div>
        
     </nav>

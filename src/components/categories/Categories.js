@@ -4,7 +4,7 @@ const Categories = [
         id:1,
         title: "Nom du projet",
         image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
+        lien : "https://github.com/aisse59?tab=overview&from=2023-06-01&to=2023-06-20",
         category : "React"
     },
     {

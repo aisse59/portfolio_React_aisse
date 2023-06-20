@@ -52,19 +52,22 @@ const Category = () => {
                 <input type="radio" id="WebDesign" name="lolo" value={"WebDesign"} onClick={()=>filterResult('WebDesign')} />
                 <label htmlFor="WebDesign" className="text-quaternary text-xl font-bold ml-2">WebDesign</label>
             </li>
+            
         </ul>
         
-        <div className="flex flex-wrap w-[80%] h-screen mx-auto justify-start gap-4  mt-12 ">
-            
+        <div className="flex flex-wrap w-[80%] h-screen mx-auto justify-start gap-4  mt-12  ">
+        
         {data.map((values)=>{
             const {id,title,image,lien}=values;
             return(
-                <div className=" w-[45%] h-[327px] bg-primary  rounded-3xl" key={id}>
-                    <h1 className="text-quaternary text-sm font-semibold">{title}</h1>
-                    <img src={image} alt="..." className="object-cover w-[379px] h-[197px] rounded-3xl border-solid border-2 border-quaternary shadow shadow-quaternary " />
-                    <a href={lien}>
-                        <button >voir le projet</button>
-                    </a>
+                <div className=" w-[45%] h-[327px] bg-primary shadow-lg shadow-primary rounded-3xl py-8  " key={id}>
+                    <h1 className="text-quaternary text-sm font-semibold pl-8">{title}</h1>
+                    <div className="grid justify-items-center gap-4 pt-4">
+                        <img src={image} alt="..." className="object-cover w-[379px] h-[197px] rounded-3xl border-solid border-2 border-quaternary" />
+                        <a href={lien} >
+                            <button className="bg-quaternary text-secondary w-36 h-8 rounded-3xl text-xs font-semibold hover:bg-secondary hover:text-quaternary">voir le projet</button>
+                        </a>
+                    </div>
                 </div>
                 )
             })}

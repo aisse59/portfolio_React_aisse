@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import aisse from '../../images/aisse.jpg';
 import '../../App.css';
 import accueil from '../../icons/Home.svg';
@@ -19,34 +20,34 @@ const Menu = () => {
         {/* div image et nom,prenom */}
         <div className="grid justify-items-center gap-8 ">
             <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4" />
-            <h1 className="text-quaternary font-semibold text-4xl mb-12" style={{fontFamily:'Poppins-Semibold'}}>Aïssé Camara</h1>
+            <h1 className="text-quaternary font-semibold text-4xl mb-12" >Aïssé Camara</h1>
         </div>
         {/* liste naviagation */}
         <div className="text-quaternary grid justify-items-center  ">
             <ul className="space-y-9"  >
                 <li > 
-                    <a href="./" className="flex flex-row gap-8  ">
+                    <Link to="../pages/Home.js" className="flex flex-row gap-8  ">
                         <img src={accueil} alt="accueil svg" /> 
-                        <span className="text-2xl font-semibold" style={{fontFamily:'Poppins-Semibold'}}>Accueil</span>
-                    </a>
+                        <span className="text-2xl font-semibold" >Accueil</span>
+                    </Link>
                 </li>
                 <li > 
-                    <a href="./" className="flex flex-row gap-8  ">
+                    <Link to="./" className="flex flex-row gap-8  ">
                         <img src={competences} alt="competence svg" /> 
-                        <span className="text-2xl font-semibold" style={{fontFamily:'Poppins-Semibold'}}>Compétences</span>
-                    </a>
+                        <span className="text-2xl font-semibold" >Compétences</span>
+                    </Link>
                 </li>
                 <li > 
-                    <a href="./" className="flex flex-row gap-8 ">
+                    <Link to="/pages/Portfolio.js" className="flex flex-row gap-8 ">
                         <img src={portfolio} alt="portfolio svg" /> 
-                        <span className="text-2xl font-semibold" style={{fontFamily:'Poppins-Semibold'}}>Portfolio</span>
-                    </a>
+                        <span className="text-2xl font-semibold" >Portfolio</span>
+                    </Link>
                 </li>
                 <li > 
-                    <a href="./" className="flex flex-row gap-8 ">
+                    <Link to="./" className="flex flex-row gap-8 ">
                         <img src={contact} alt="contact svg" /> 
-                        <span className="text-2xl font-semibold" style={{fontFamily:'Poppins-Semibold'}}>Contact</span>
-                    </a>
+                        <span className="text-2xl font-semibold" >Contact</span>
+                    </Link>
                 </li>
             </ul>
         </div>
@@ -71,7 +72,7 @@ const Menu = () => {
         {/* copyryght */}
         <div className="flex flex-row gap-2   justify-center  ">
             <img src={copyright} alt="copyright svg" />
-            <span className="text-quaternary text-xs" style={{fontFamily:'Poppins-Regular'}}>copyright,Aïssé Camara- 2023</span>
+            <span className="text-quaternary text-xs">copyright,Aïssé Camara- 2023</span>
         </div>
         </div>
        

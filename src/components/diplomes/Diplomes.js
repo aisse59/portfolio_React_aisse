@@ -19,17 +19,7 @@ const Diplomes = [
         etablissement: 'Lycée Jean Moulin à Roubaix',
         diplome: 'Baccalaureat Professionnel Secrétariat',
         category: 'Diplome'
-    },
-    {
-        id:4,
-        annee: '(2008-2010)',
-        poste: 'Lycée Jean Moulin à Roubaix',
-        societe: 'Baccalaureat Professionnel Secrétariat',
-        desciption1: 'xsfddfgdf',
-        desciption2: 'xsfddfgdf'
-    },
-
-    
+    }    
 ]
  
 export default Diplomes;

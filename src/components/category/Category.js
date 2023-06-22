@@ -63,7 +63,7 @@ const Category = () => {
                 <div className=" w-[45%] h-[327px] bg-primary shadow-lg shadow-primary rounded-3xl py-8  " key={id}>
                     <h1 className="text-quaternary text-sm font-semibold pl-8">{title}</h1>
                     <div className="grid justify-items-center gap-4 pt-4">
-                        <img src={image} alt="..." className="object-cover w-[379px] h-[197px] rounded-3xl border-solid border-2 border-quaternary" />
+                        <img src={image} alt="..." className="object-cover w-[379px] h-[197px] rounded-3xl " />
                         <a href={lien} >
                             <button className="bg-quaternary text-secondary w-36 h-8 rounded-3xl text-xs font-semibold hover:bg-secondary hover:text-quaternary">voir le projet</button>
                         </a>

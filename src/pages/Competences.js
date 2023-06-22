@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "../components/menu/Menu.component";
 import ImgBG from '../../src/images/imgBG.png';
 import Diplome from "../components/diplome/Diplome";
+import Experiences from "../components/experiences/Experiences";
 
 const Competences = () => {
     return ( 
@@ -13,6 +14,7 @@ const Competences = () => {
         {/* background opacity */}
         <div className="absolute inset-0 bg-opacity-50 bg-black" style={{ overflowY: 'auto'}}>
             <Diplome/>
+            <Experiences/>
         </div>
     </div>
 </div>

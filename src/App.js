@@ -1,8 +1,9 @@
 import React from "react";
-import { Route,Routes,Navigate } from "react-router-dom";
+import { Route,Routes,Navigate} from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Competences from "./pages/Competences";
+
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="portfolio" element={<Portfolio/>}/> 
         <Route path="competences" element={<Competences/>}/> 
       </Routes>
+        
     </>
   );
 }

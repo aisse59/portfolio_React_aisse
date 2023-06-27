@@ -6,6 +6,8 @@ import Competences from "./pages/Competences";
 import Langages from "./components/langages/Langages";
 import Menu from "./components/menu/Menu.component";
 import ImgBG from './images/imgBG.png';
+import Diplome from "./components/diplome/Diplome";
+import Experiences from "./components/experiences/Experiences";
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Route path="portfolio" element={<Portfolio/>}/> 
         <Route path="competences" element={<Competences/>}/> 
         <Route path="/langages" element={<Langages/>}/>
+        <Route path="/diplomes" element={<Diplome/>}/>
+        <Route path="/experiences" element={<Experiences/>}/>
       </Routes> 
 </div>
 </div>

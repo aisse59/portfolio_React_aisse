@@ -3,20 +3,35 @@ import { Route,Routes,Navigate} from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Competences from "./pages/Competences";
-
+import Langages from "./components/langages/Langages";
+import Menu from "./components/menu/Menu.component";
+import ImgBG from './images/imgBG.png';
 
 
 function App() {
   return (
-    <>
-      <Routes>
+    
+    
+     
+<div className="flex ">
+<Menu/>
+{/* backgroundImage */}
+<div className="flex-1 bg-cover bg-black relative" style={{backgroundImage: `url(${ImgBG})`,  overflowY: 'auto'}}>
+
+{/* background opacity */}
+<div className="absolute inset-0 bg-opacity-50 bg-black" style={{ overflowY: 'auto'}}>
+<Routes>
         <Route exact path="/" element={<Navigate replace to="/accueil" />} />
         <Route path="accueil" element={<Home/>}/> 
         <Route path="portfolio" element={<Portfolio/>}/> 
         <Route path="competences" element={<Competences/>}/> 
-      </Routes>
-        
-    </>
+        <Route path="/langages" element={<Langages/>}/>
+      </Routes> 
+</div>
+</div>
+</div>
+    
+
   );
 }
 

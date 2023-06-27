@@ -1,6 +1,4 @@
 import React from "react";
-import Menu from "../components/menu/Menu.component";
-import ImgBG from '../../src/images/imgBG.png';
 import CVFile from '../cv/CV AC DEVELOPPEUSE WEB.pdf';
 import '../App.css';
 
@@ -14,12 +12,9 @@ const Home = () => {
     
     return ( 
     
-        <div className="flex">
-                <Menu/> 
-                {/* backgroundImage */}
-            <div className="flex-1 bg-cover bg-black relative" style={{backgroundImage: `url(${ImgBG})`}}>
-                {/* background opacity */}
-                <div className="absolute inset-0 bg-opacity-50 bg-black">
+       
+             
+               <>
                     {/* block nom,prénom et fonction */}
                     <div className="mt-28 ml-10">
                         <h1 className="text-quaternary text-4xl font-normal" >
@@ -39,9 +34,9 @@ const Home = () => {
                     <button onClick={handleDowload} className="w-64 h-20 bg-quaternary rounded-3xl shadow-md text-secondary font-semibold text-xl mt-24  ml-10" >
                         Télécharger mon CV
                     </button>
-                </div>
-            </div>
-        </div>
+               </>
+            
+        
     
     );
 }

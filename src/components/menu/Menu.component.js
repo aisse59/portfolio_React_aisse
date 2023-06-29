@@ -26,19 +26,19 @@ const Menu = () => {
         <div className="text-quaternary grid justify-items-center  ">
             <ul className="space-y-9"  >
                 <li > 
-                    <Link to="../pages/Home.js" className="flex flex-row gap-8  ">
+                    <Link to="/accueil" className="flex flex-row gap-8  ">
                         <img src={accueil} alt="accueil svg" /> 
                         <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Accueil</span>
                     </Link>
                 </li>
                 <li > 
-                    <Link to="./" className="flex flex-row gap-8  ">
+                    <Link to="/competences" className="flex flex-row gap-8  ">
                         <img src={competences} alt="competence svg" /> 
                         <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Compétences</span>
                     </Link>
                 </li>
                 <li > 
-                    <Link to="/pages/Portfolio.js" className="flex flex-row gap-8 ">
+                    <Link to="/portfolio" className="flex flex-row gap-8 ">
                         <img src={portfolio} alt="portfolio svg" /> 
                         <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Portfolio</span>
                     </Link>

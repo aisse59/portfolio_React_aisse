@@ -2,7 +2,7 @@ import React from "react";
 // import Diplome from "../components/diplome/Diplome";
 // import Experiences from "../components/experiences/Experiences";
 import Langages from "../components/langages/Langages";
-import Filter from "../components/filter/Filter";
+
 
 const Competences = () => {
     return ( 
@@ -19,7 +19,7 @@ const Competences = () => {
 //     </div>
 // </div>
         <div >
-            <Filter/>
+            
             <Langages/>
         </div>
     );

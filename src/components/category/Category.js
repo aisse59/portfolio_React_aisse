@@ -65,7 +65,7 @@ const Category = () => {
                     <div className="grid justify-items-center gap-4 pt-4">
                         <img src={image} alt="..." className="object-cover w-[379px] h-[197px] rounded-3xl " />
                         <a href={lien} >
-                            <button className="bg-quaternary text-secondary w-36 h-8 rounded-3xl text-xs font-semibold hover:bg-secondary hover:text-quaternary">voir le projet</button>
+                            <button className="bg-quaternary text-secondary w-36 h-8 rounded-3xl text-xs font-semibold hover:bg-secondary hover:text-quaternary duration-700">voir le projet</button>
                         </a>
                     </div>
                 </div>

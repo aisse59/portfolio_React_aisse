@@ -28,25 +28,25 @@ const Menu = () => {
                 <li > 
                     <Link to="../pages/Home.js" className="flex flex-row gap-8  ">
                         <img src={accueil} alt="accueil svg" /> 
-                        <span className="text-2xl font-semibold" >Accueil</span>
+                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Accueil</span>
                     </Link>
                 </li>
                 <li > 
                     <Link to="./" className="flex flex-row gap-8  ">
                         <img src={competences} alt="competence svg" /> 
-                        <span className="text-2xl font-semibold" >Compétences</span>
+                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Compétences</span>
                     </Link>
                 </li>
                 <li > 
                     <Link to="/pages/Portfolio.js" className="flex flex-row gap-8 ">
                         <img src={portfolio} alt="portfolio svg" /> 
-                        <span className="text-2xl font-semibold" >Portfolio</span>
+                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Portfolio</span>
                     </Link>
                 </li>
                 <li > 
                     <Link to="./" className="flex flex-row gap-8 ">
                         <img src={contact} alt="contact svg" /> 
-                        <span className="text-2xl font-semibold" >Contact</span>
+                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Contact</span>
                     </Link>
                 </li>
             </ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import diplome from '../../icons/Diplome.svg';
+import Filter from "../filter/Filter";
 
 
 
@@ -9,7 +10,8 @@ const Diplome
    
     return ( 
       <>
-      <div className=" flex justify-center gap-4">
+     <Filter/> 
+      <div className=" flex justify-center gap-4 mt-10">
          <img src={diplome} alt="diplome svg" />
          <h1 className="text-4xl text-quaternary font-bold">Diplômes</h1>
       </div>

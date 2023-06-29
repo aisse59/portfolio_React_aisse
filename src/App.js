@@ -10,6 +10,7 @@ import Diplome from "./components/diplome/Diplome";
 import Experiences from "./components/experiences/Experiences";
 
 
+
 function App() {
   return (
     
@@ -24,12 +25,13 @@ function App() {
 <div className="absolute inset-0 bg-opacity-50 bg-black" style={{ overflowY: 'auto'}}>
 <Routes>
         <Route exact path="/" element={<Navigate replace to="/accueil" />} />
-        <Route path="accueil" element={<Home/>}/> 
-        <Route path="portfolio" element={<Portfolio/>}/> 
-        <Route path="competences" element={<Competences/>}/> 
+        <Route path="/accueil" element={<Home/>}/> 
+        <Route path="/portfolio" element={<Portfolio/>}/> 
+        <Route path="/competences" element={<Competences/>}/> 
         <Route path="/langages" element={<Langages/>}/>
         <Route path="/diplomes" element={<Diplome/>}/>
         <Route path="/experiences" element={<Experiences/>}/>
+        
       </Routes> 
 </div>
 </div>

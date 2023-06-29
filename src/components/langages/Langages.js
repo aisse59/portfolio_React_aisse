@@ -16,12 +16,19 @@ import mongoDB from '../../icons/mongodb-plain.svg';
 import postman from '../../icons/postman.svg';
 import nodejs from '../../icons/nodejs-plain.svg';
 import webpack from '../../icons/webpack-plain.svg';
+import Filter from "../filter/Filter";
+import programming from '../../icons/Programming.svg';
 
 const Langages = () => {
     return (  
         <>
+        <Filter />
+        <div className=" flex justify-center gap-4 mt-10">
+         <img src={programming} alt="experience svg" />
+         <h1 className="text-4xl text-quaternary font-bold">Langages de programmation</h1>
+      </div>
         {/* front-end */}
-            <h2 className="text-4xl font-bold ml-6"><span className="text-secondary font-bold text-3xl">01. </span> Front-End  </h2>
+            <h2 className="text-2xl font-bold ml-6 mt-10"><span className="text-secondary font-bold text-xl">01. </span> Front-End  </h2>
             <div className="flex flex-wrap w-[80%] mt-12 mb-24 mx-auto justify-start gap-2">
                 <div className="grid justify-items-center gap-1 content-center h-32 w-32 bg-quaternary rounded-3xl ">
                     <img src={html} alt="html svg" className="h-10 w-10" />
@@ -58,7 +65,7 @@ const Langages = () => {
             </div>
 
             {/* back-end */}
-            <h2 className="text-4xl font-bold ml-6"><span className="text-secondary font-bold text-3xl">02. </span> Back-End  </h2>
+            <h2 className="text-2xl font-bold ml-6"><span className="text-secondary font-bold text-xl">02. </span> Back-End  </h2>
             <div className="flex flex-wrap w-[80%] mt-12 mb-24 mx-auto justify-start gap-2">
                 <div className="grid justify-items-center gap-1 content-center h-32 w-32 bg-quaternary rounded-3xl ">
                     <img src={symfony} alt="symfony svg" className="h-10 w-10" />
@@ -87,7 +94,7 @@ const Langages = () => {
             </div>
            
             {/* design */}
-            <h2 className="text-4xl font-bold ml-6"><span className="text-secondary font-bold text-3xl">03. </span> Design  </h2>
+            <h2 className="text-2xl font-bold ml-6"><span className="text-secondary font-bold text-xl">03. </span> Design  </h2>
             <div className="flex flex-wrap w-[80%] mt-12 mb-12 mx-auto justify-start gap-2">
                 <div className="grid justify-items-center gap-1 content-center h-32 w-32 bg-quaternary rounded-3xl ">
                     <img src={figma} alt="figma svg" className="h-10 w-10" />

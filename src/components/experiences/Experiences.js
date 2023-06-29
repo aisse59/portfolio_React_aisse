@@ -1,11 +1,13 @@
 import React from "react";
 import experience from '../../icons/Experiences.svg';
+import Filter from "../filter/Filter";
 
 
 const Experiences = () => {
     return ( 
         <>
-      <div className=" flex justify-center gap-4">
+        <Filter/>
+      <div className=" flex justify-center gap-4 mt-10">
          <img src={experience} alt="experience svg" />
          <h1 className="text-4xl text-quaternary font-bold">Expériences</h1>
       </div>

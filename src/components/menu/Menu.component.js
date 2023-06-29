@@ -44,7 +44,7 @@ const Menu = () => {
                     </Link>
                 </li>
                 <li > 
-                    <Link to="./" className="flex flex-row gap-8 ">
+                    <Link to="/contact" className="flex flex-row gap-8 ">
                         <img src={contact} alt="contact svg" /> 
                         <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Contact</span>
                     </Link>

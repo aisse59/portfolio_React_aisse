@@ -1,25 +1,47 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from '@emailjs/browser';
 import Input from "../components/input/Input";
 import Textarea from "../components/textarea/Textarea";
 
 
+
+
 const Contact = () => {
+        
+        const form = useRef();
+      
+        const sendEmail = (e) => {
+          e.preventDefault();
+      
+          emailjs
+            .sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID, 
+            form.current, 
+            process.env.REACT_APP_PUBLIC_KEY
+            )
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        };
+
     return ( 
         <>
-            <div className="grid justify-items-center w-10/12 h-screen bg-black-500  mt-2 mb-2 rounded-3xl px-4 mx-auto">
+            <div className="grid justify-items-center w-full h-screen bg-black-500 px-4 ">
                 <div className="w-3/5 grid justify-items-center">
-
                     <h1 className="text-quaternary font-bold text-2xl mt-5 ">Me Contacter</h1>
                     <p className="text-quaternary text-sm font-base mt-5 mb-10 text-center">Je suis ouverte à de nouvelles opportunités professionnelles passionnantes ! Si vous souhaitez collaborer avec une développeuse web motivée, n'hésitez pas à me contacter. Je serai ravie d'échanger avec vous sur les projets à venir.</p>
                 </div>
-                    <form action="">
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <label htmlFor="nom" className=" font-semibold text-sm text-quaternary ">Votre nom</label>
                                 <Input 
                                 type={'text'} 
                                 placeholder={'Quel est votre nom'}
-                                name={'nom'}
+                                name={'user_name'}
                                 />
                             </div>
                             <div>
@@ -27,7 +49,7 @@ const Contact = () => {
                                 <Input 
                                 type={'text'} 
                                 placeholder={'Quel est votre prénom'}
-                                name={'prenom'}
+                                name={'user_surname'}
                                 />
                             </div>
                         </div>
@@ -36,7 +58,7 @@ const Contact = () => {
                             <Input 
                             type={'email'} 
                             placeholder={'Quel est votre email'}
-                            name={'email'}
+                            name={'user_email'}
                             />
 
                             <label htmlFor="message" className="font-semibold text-sm text-quaternary">Votre Message</label>

@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 import Input from "../components/input/Input";
 import Textarea from "../components/textarea/Textarea";
@@ -8,7 +8,8 @@ import Textarea from "../components/textarea/Textarea";
 
 const Contact = () => {
         
-        const form = useRef();
+        const formRef = useRef();
+        const [messageSent, setMessageSent] = useState(false);
       
         const sendEmail = (e) => {
           e.preventDefault();
@@ -17,15 +18,35 @@ const Contact = () => {
             .sendForm(
             process.env.REACT_APP_SERVICE_ID,
             process.env.REACT_APP_TEMPLATE_ID, 
-            form.current, 
+            formRef.current, 
             process.env.REACT_APP_PUBLIC_KEY
             )
             .then((result) => {
                 console.log(result.text);
+                setMessageSent(true); // Mettre à jour l'état messageSent à true
+                formRef.current.reset(); // Réinitialiser le formulaire
+                setTimeout(() => {
+                    window.location.reload(); // Recharger la page après un délai de 2 secondes
+                }, 2000);
             }, (error) => {
                 console.log(error.text);
             });
         };
+
+        const handleReset = () => {
+            formRef.current.reset(); // Réinitialiser le formulaire sans modifier l'état messageSent
+        };
+
+       
+
+        if (messageSent) {
+            return (
+                <div className="grid justify-items-center w-full h-screen bg-black-500 px-4 ">
+                    <h2 className="text-quaternary font-bold text-2xl mt-5 ">Message envoyé avec succès !</h2>
+                    
+                </div>
+            );
+        }
 
     return ( 
         <>
@@ -34,7 +55,7 @@ const Contact = () => {
                     <h1 className="text-quaternary font-bold text-2xl mt-5 ">Me Contacter</h1>
                     <p className="text-quaternary text-sm font-base mt-5 mb-10 text-center">Je suis ouverte à de nouvelles opportunités professionnelles passionnantes ! Si vous souhaitez collaborer avec une développeuse web motivée, n'hésitez pas à me contacter. Je serai ravie d'échanger avec vous sur les projets à venir.</p>
                 </div>
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form ref={formRef} onSubmit={sendEmail}>
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <label htmlFor="nom" className=" font-semibold text-sm text-quaternary ">Votre nom</label>

@@ -10,21 +10,29 @@ const Contact = () => {
     const recaptchaRef = useRef();
     const formRef = useRef();
     const [messageSent, setMessageSent] = useState(false);
+    const [robotChecked, setRobotChecked] = useState(false);
     const keyRecaptcha = process.env.REACT_APP_RECAPTCHA_KEY;
 
 
-    // function onChange(value) {
-    //     console.log("Captcha value:", value);
-    // }
+    
     const onChange = (value) => {
         console.log("Captcha value:", value);
-    }
+        setRobotChecked(true); // Mettre à jour l'état robotChecked à true lors de la validation du reCAPTCHA
+        
+    };
+
+    
       
     const sendEmail = (e) => {
         e.preventDefault();
         const recaptchaValue = recaptchaRef.current.getValue();
-        // onSubmit(recaptchaValue);
-        // recaptchaRef.current.execute()  
+
+        if (!robotChecked) {
+            // Si le reCAPTCHA n'est pas validé, afficher un message ou prendre une action appropriée
+            console.log("Veuillez cocher la case 'Je ne suis pas un robot'");
+            return;
+        }
+     
         
         if (recaptchaValue) {
             
@@ -108,11 +116,10 @@ const Contact = () => {
                         sitekey={keyRecaptcha}
                         onChange={onChange}
                     />
-                    <span>
-                      {!messageSent ?
-                            'Cochez la case je ne suis pas un robot!'   : ''
-                    }
-                    </span>
+                     {!robotChecked && (
+                        <span className="text-red-500">Veuillez cocher la case "Je ne suis pas un robot!"</span>
+                    )}
+                     
                     <div className="grid justify-items-center">
                         <button className="w-48 h-16 outline-0 py-3 px-4  rounded-3xl text-primary bg-quaternary  font-semibold text-xs mt-2" type="submit">Envoyer</button>
                     </div>

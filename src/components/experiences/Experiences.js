@@ -1,6 +1,7 @@
 import React from "react";
 import experience from '../../icons/Experiences.svg';
 import Filter from "../filter/Filter";
+import calendar from "../../icons/Calendar.svg";
 
 
 const Experiences = () => {
@@ -23,7 +24,9 @@ const Experiences = () => {
              
            </div>
             <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
-              <h3 class="mb-3 font-bold text-quaternary text-xl">2022</h3>
+              <h3 class="mb-3 font-bold text-quaternary text-xl flex flex-row gap-2">
+              <img src={calendar} alt="calendar" />
+              2022</h3>
               <p className="text-lg font-semibold text-quaternary">Poste</p>
               <p className="text-sm font-semibold italic text-quaternary">Nom de la société</p>
               <ul class="text-sm leading-snug tracking-wide text-quaternary text-opacity-100">
@@ -40,7 +43,9 @@ const Experiences = () => {
                 
             </div>
            <div class="order-1 bg-quaternary rounded-lg shadow-xl w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-primary text-xl">2022</h3>
+                <h3 class="mb-3 font-bold text-primary text-xl flex flex-row gap-2">
+                <img src={calendar} alt="calendar" />
+                2022</h3>
                 <p className="text-lg font-semibold text-primary">Poste</p>
                 <p className="text-sm font-semibold italic text-primary">Nom de la société</p>
                 <ul class="text-sm leading-snug tracking-wide text-primary text-opacity-100">
@@ -57,7 +62,9 @@ const Experiences = () => {
               
             </div>
            <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-quaternary text-xl">2022</h3>
+                    <h3 class="mb-3 font-bold text-quaternary text-xl flex flex-row gap-2">
+                    <img src={calendar} alt="calendar" />  
+                    2022</h3>
                     <p className="text-lg font-semibold text-quaternary">Poste</p>
                     <p className="text-sm font-semibold italic text-quaternary">Nom de la société</p>
                 <ul class="text-sm leading-snug tracking-wide text-quaternary text-opacity-100">
@@ -75,7 +82,10 @@ const Experiences = () => {
              
            </div>
             <div class="order-1 bg-quaternary rounded-lg shadow-xl w-5/12 px-6 py-4">
-            <h3 class="mb-3 font-bold text-primary text-xl">2022</h3>
+            <h3 class="mb-3 font-bold text-primary text-xl flex flex-row gap-2">
+             <img src={calendar} alt="calendar" /> 
+              2022
+            </h3>
                     <p className="text-lg font-semibold text-primary">Poste</p>
                     <p className="text-sm font-semibold italic text-primary">Nom de la société</p>
                 <ul class="text-sm leading-snug tracking-wide text-primary text-opacity-100">
@@ -93,7 +103,10 @@ const Experiences = () => {
               
             </div>
            <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-quaternary text-xl">2022</h3>
+                    <h3 class="mb-3 font-bold text-quaternary text-xl flex flex-row gap-2">
+                    <img src={calendar} alt="calendar" />  
+                      2022
+                    </h3>
                     <p className="text-lg font-semibold text-quaternary">Poste</p>
                     <p className="text-sm font-semibold italic text-quaternary">Nom de la société</p>
                 <ul class="text-sm leading-snug tracking-wide text-quaternary text-opacity-100">

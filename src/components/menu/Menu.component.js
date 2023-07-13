@@ -12,6 +12,9 @@ import linkedin from '../../icons/LinkedIn.svg';
 import copyright from '../../icons/Copyright.svg';
 
 const Menu = () => {
+
+   
+
     return ( 
         
     <nav className="bg-primary w-1/4 h-screen ">
@@ -75,7 +78,9 @@ const Menu = () => {
             <span className="text-quaternary text-xs">copyright,Aïssé Camara- 2023</span>
         </div>
         </div>
-       
+        
+      
+
     </nav>
     );
 }

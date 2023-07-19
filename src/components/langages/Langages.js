@@ -21,7 +21,7 @@ import programming from '../../icons/Programming.svg';
 
 const Langages = () => {
     return (  
-        <>
+        <div className="w-full">
         <Filter />
         <div className=" flex justify-center gap-4 mt-10">
          <img src={programming} alt="experience svg" />
@@ -110,7 +110,7 @@ const Langages = () => {
                 </div>
             </div>
             
-        </>
+        </div>
     );
 }
  

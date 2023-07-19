@@ -28,9 +28,9 @@ const Diplome
              
            </div>
             <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
-              <h3 class="mb-3 font-bold text-quaternary text-xl flex flex-row gap-2"> 
+              <h3 class="mb-3 font-bold text-quaternary text-base flex flex-row gap-2"> 
               <img src={calendar} alt="calendar" />2022</h3>
-              <ul class="text-sm leading-snug tracking-wide text-quaternary text-opacity-100">
+              <ul class="text-sm leading-snug tracking-wide text-quaternary text-opacity-100 pl-4">
                <li className="font-semibold list-disc text-lg">Développeur web et web mobile bac+2</li>
                <li className="font-semibold  italic">Centre de formation AFPA</li>
               </ul>
@@ -44,10 +44,10 @@ const Diplome
              
            </div>
            <div class="order-1 bg-quaternary rounded-lg shadow-xl w-5/12 px-6 py-4">
-             <div class="mb-3 font-bold text-primary text-xl flex flex-row gap-2">
+             <h3 class="mb-3 font-bold text-primary text-base flex flex-row gap-2 ">
              <img src={calendar} alt="calendar" />
-              2012</div>
-            <ul class="text-sm font-medium leading-snug tracking-wide text-primary text-opacity-100">
+              2012</h3>
+            <ul class="text-sm font-medium leading-snug tracking-wide text-primary text-opacity-100 pl-4">
                <li className="font-semibold  list-disc">BTS Assistant de Manager</li>
                <li className="font-semibold  italic">Lycée Jean Moulin à Roubaix</li>
             </ul>
@@ -61,10 +61,10 @@ const Diplome
              
             </div>
            <div class="order-1 bg-primary rounded-lg shadow-xl w-5/12 px-6 py-4">
-             <h3 class="mb-3 font-bold text-quaternary text-xl flex flex-row gap-2">
+             <h3 class="mb-3 font-bold text-quaternary text-base flex flex-row gap-2 ">
              <img src={calendar} alt="calendar" />
               2010</h3>
-             <ul class="text-sm leading-snug tracking-wide text-quaternary text-opacity-100">
+             <ul class="text-sm leading-snug tracking-wide text-quaternary text-opacity-100 pl-4">
              <li className="font-semibold  list-disc">Baccalaureat Professionnel Secrétariat</li>
                <li className="font-semibold  italic">Lycée Jean Moulin à Roubaix</li>
              </ul>

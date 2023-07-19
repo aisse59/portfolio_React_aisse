@@ -13,17 +13,20 @@ import copyright from '../../icons/Copyright.svg';
 
 const Menu = () => {
 
-   
+   const githubProfilLink = 'https://github.com/aisse59';
+   const twitterProfilLink = 'https://twitter.com/aisse59';
+   const linkedinProfilLink = 'https://www.linkedin.com/in/a%C3%AFss%C3%A9-camara-468a97215';
+  
 
     return ( 
         
-    <nav className="bg-primary w-1/4 h-screen ">
-        <div className="fixed bg-primary w-1/4 h-screen ">
+    <nav id="menu" className="bg-primary w-1/4 h-screen ">
+        <div  className="flex flex-col justify-around fixed bg-primary w-1/4 h-screen pb-2">
 
         {/* div image et nom,prenom */}
         <div className="grid justify-items-center gap-8 ">
             <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4" />
-            <h1 className="text-quaternary font-semibold text-4xl mb-12" >Aïssé Camara</h1>
+            <h1 className=" text-center text-quaternary font-semibold text-4xl mb-12" >Aïssé Camara</h1>
         </div>
         {/* liste naviagation */}
         <div className="text-quaternary grid justify-items-center  ">
@@ -31,7 +34,7 @@ const Menu = () => {
                 <li > 
                     <Link to="/accueil" className="flex flex-row gap-8  ">
                         <img src={accueil} alt="accueil svg" /> 
-                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Accueil</span>
+                        <span className="  text-2xl font-semibold hover:text-tertiary duration-700" >Accueil</span>
                     </Link>
                 </li>
                 <li > 
@@ -55,19 +58,19 @@ const Menu = () => {
             </ul>
         </div>
         {/* RESEAUX SOCIAUX */}
-        <div className="flex flex-row gap-12 justify-center mt-20 mb-5">
+        <div className="flex flex-row justify-around mt-20 mb-5">
             <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
-                <a href="./" className="  ">
+                <a href={githubProfilLink} target="_blank" rel="noopener noreferrer">
                     <img src={github} alt="github svg"  />
                 </a>
             </div>
             <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
-                <a href="./">
+                <a href={twitterProfilLink} target="_blank" rel="noopener noreferrer">
                     <img src={twitter} alt="twitter svg" />
                 </a>
             </div>
             <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
-                <a href="./">
+                <a href={linkedinProfilLink} target="_blank" rel="noopener noreferrer">
                     <img src={linkedin} alt="linkedin svg" />
                 </a>
             </div>
@@ -78,6 +81,7 @@ const Menu = () => {
             <span className="text-quaternary text-xs">copyright,Aïssé Camara- 2023</span>
         </div>
         </div>
+        
         
       
 

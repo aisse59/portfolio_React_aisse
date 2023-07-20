@@ -7,7 +7,7 @@ import programming from '../../icons/Programming.svg'
 
 const Filter = () => {
   return (
-    <div className="flex flex-row justify-start gap-8 mt-6 mb-6 ml-8">
+    <div className="flex flex-col sm:justify-center md:flex-row md:justify-start gap-2 md:gap-8 mt-6 mb-6 mx-5 md:ml-8">
      <button className="flex flex-row gap-2 justify-center  items-center rounded-2xl py-2 bg-primary hover:bg-quaternary text-quaternary text-base hover:text-primary font-semibold px-5
       duration-700">
             <img src={programming} alt="diplome svg" className="h-7 w-7" />

@@ -1,5 +1,5 @@
 import React from "react";
-import CVFile from '../cv/CV AC DEVELOPPEUSE WEB.pdf';
+import CVFile from '../cv/CV AISSE CAMARA DEVELOPPEUSE WEB.pdf';
 import '../App.css';
 
 

@@ -2,66 +2,66 @@
 const Categories = [
     {
         id:1,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "https://github.com/aisse59?tab=overview&from=2023-06-01&to=2023-06-20",
-        category : "React"
-    },
-    {
-        id:2,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
-        category : "Symfony"
-    },
-    {
-        id:3,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
+        title: "API meteo",
+        image : require('../../images/application meteo.png'),
+        lien : "https://aisse59.github.io/API-METEO-JAVASCRIPT/",
         category : "Javascript"
     },
     {
+        id:2,
+        title: "Projet React Blog",
+        image : require('../../images/projet blog bproo blog.png'),
+        lien : "https://github.com/aisse59/Cr-er-une-application-React",
+        category : "React"
+    },
+    {
+        id:3,
+        title: "React App movies",
+        image : require('../../images/react movie.png'),
+        lien : "https://github.com/aisse59/projet_react_movies",
+        category : "React"
+    },
+    {
         id:4,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
-        category : "WebDesign"
+        title: "App React Countries",
+        image : require('../../images/react pays.png'),
+        lien : "https://aisse59.github.io/projet_react_pays/",
+        category : "React"
     },
     {
         id:5,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
-        category : "React"
+        title: "Site E-commerce",
+        image : require('../../images/site ecommerce.png'),
+        lien : "https://github.com/aisse59/projet_ecommerce_symfony",
+        category : "Symfony"
     },
     {
         id:6,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
-        category : "Html/Css"
+        title: "App Hôtel",
+        image : require('../../images/projet hotel.png'),
+        lien : "https://github.com/aisse59/TP-HOTEL-SYMFONY",
+        category : "Symfony"
     },
     {
         id:7,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
-        category : "Certification"
+        title: "Cours React Udemy",
+        image : require('../../images/cours react udemy monters.png'),
+        lien : "https://aisse59.github.io/Course-React-Udemy/",
+        category : "React"
     },
     {
         id:8,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
-        category : "CMS"
+        title: "App Chasseur Immobilier",
+        image : require('../../images/stage-wihuntiz.png'),
+        lien : "https://www.wihuntiz.com/",
+        category : "Angular"
     },
     {
         id:9,
-        title: "Nom du projet",
-        image : require('../../images/james-harrison-UVMPVIRCF5w-unsplash.jpg'),
-        lien : "./",
-        category : "React"
+        title: "E-commerce Shopify",
+        image : require('../../images/imna.png'),
+        lien : "https://imna.fr/",
+        category : "CMS"
     }
 ]
  

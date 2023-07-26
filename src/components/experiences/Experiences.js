@@ -22,7 +22,7 @@ const Experiences = () => {
            <div class="order-1 md:w-5/12"></div>
             <div class=" -z-20 md:z-20 flex items-center order-1 bg-quaternary shadow-xl w-4 h-4 rounded-full">
            </div>
-            <div class="order-1 bg-primary rounded-lg shadow-xl md:w-5/12 px-6 py-4">
+            <div class="order-1 bg-primary rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
               <h3 class="mb-3 font-bold text-quaternary text-xs  md:text-base flex flex-row gap-2">
               <img src={calendar} alt="calendar" />
               novembre 2022 à décembre 2022</h3>
@@ -45,11 +45,10 @@ const Experiences = () => {
           {/* <!-- left timeline --> */}
          <div class="mb-8 flex justify-center  md:justify-between  flex-row-reverse items-center w-full left-timeline">
            <div class="order-1 md:w-5/12"></div>
-            <div class="-z-20 md:z-20 flex items-center order-1 bg-quaternary shadow-xl w-4 h-4 rounded-full">
-                
+            <div class="-z-20 md:z-20 flex items-center order-1 bg-quaternary shadow-xl w-4 h-4  rounded-full">
             </div>
-           <div class="order-1 bg-quaternary rounded-lg shadow-xl md:w-5/12 px-6 py-4">
-                <h3 class="text-xs md:text-base mb-3 font-bold text-primary text-base flex flex-row gap-2">
+           <div class="order-1 bg-quaternary rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                <h3 class="text-xs md:text-base mb-3 font-bold text-primary flex flex-row gap-2">
                 <img src={calendar} alt="calendar" />
                 avril 2022 à decembre 2022</h3>
                 <p className="text-xs md:text-base font-semibold text-primary">Formation de développeur web et web mobile</p>
@@ -72,7 +71,7 @@ const Experiences = () => {
             <div class="-z-20 md:z-20 flex items-center order-1 bg-quaternary shadow-xl w-4 h-4 rounded-full">
               
             </div>
-           <div class="order-1 bg-primary rounded-lg shadow-xl md:w-5/12 px-6 py-4">
+           <div class="order-1 bg-primary rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
                     <h3 class="mb-3 font-bold text-quaternary text-xs  md:text-base flex flex-row gap-2">
                     <img src={calendar} alt="calendar" />  
                     février 2022 à avril 2022</h3>
@@ -94,7 +93,7 @@ const Experiences = () => {
            <div class="-z-20 md:z-20 flex items-center order-1 bg-quaternary shadow-xl w-4 h-4 rounded-full">
              
            </div>
-            <div class="order-1 bg-quaternary rounded-lg shadow-xl md:w-5/12 px-6 py-4">
+            <div class="order-1 bg-quaternary rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
             <h3 class="mb-3 font-bold text-primary text-xs  md:text-base flex flex-row gap-2">
              <img src={calendar} alt="calendar" /> 
               novembre 2020 à janvier 2021
@@ -119,7 +118,7 @@ const Experiences = () => {
             <div class="-z-20 md:z-20 flex items-center order-1 bg-quaternary shadow-xl w-4 h-4 rounded-full">
               
             </div>
-           <div class="order-1 bg-primary rounded-lg shadow-xl md:w-5/12 px-6 py-4">
+           <div class="order-1 bg-primary rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
                     <h3 class="mb-3 font-bold text-quaternary text-xs  md:text-base flex flex-row gap-2">
                     <img src={calendar} alt="calendar" />  
                       février 2020 à juillet 2020

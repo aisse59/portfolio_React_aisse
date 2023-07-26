@@ -12,6 +12,7 @@ const Contact = () => {
     const [messageSent, setMessageSent] = useState(false);
     const [robotChecked, setRobotChecked] = useState(false);
     const keyRecaptcha = process.env.REACT_APP_RECAPTCHA_KEY;
+    const [error, SetError] = useState(false);
 
 
     
@@ -30,8 +31,12 @@ const Contact = () => {
         if (!robotChecked) {
             // Si le reCAPTCHA n'est pas validé, afficher un message ou prendre une action appropriée
             console.log("Veuillez cocher la case 'Je ne suis pas un robot'");
+            SetError(true);
             return;
+
         }
+
+
      
         
         if (recaptchaValue) {
@@ -116,7 +121,7 @@ const Contact = () => {
                         sitekey={keyRecaptcha}
                         onChange={onChange}
                     />
-                     {!robotChecked && (
+                     { error && (
                         <span className="text-red-500">Veuillez cocher la case "Je ne suis pas un robot!"</span>
                     )}
                      

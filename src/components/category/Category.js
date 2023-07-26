@@ -55,15 +55,15 @@ const Category = () => {
             
         </ul>
         
-        <div className="flex flex-wrap justify-around w-full pb-5  mx-auto gap-4 pt-12  ">
+        <div className="flex flex-wrap justify-around w-full pb-5  mx-auto px-2 gap-4 pt-12  ">
         
         {data.map((values)=>{
             const {id,title,image,lien}=values;
             return(
-                <div className=" sm:w-[60%] lg:w-[45%] h-[327px] bg-primary shadow-lg shadow-primary rounded-3xl py-8  " key={id}>
-                    <h1 className="text-quaternary text-sm font-semibold pl-8">{title}</h1>
-                    <div className="grid justify-items-center gap-4 pt-4">
-                        <img src={image} alt="..." className="object-cover w-[90%] h-[197px] rounded-3xl " />
+                <div className=" sm:w-[60%] lg:w-[45%] h-[327px] bg-primary shadow-lg shadow-primary rounded-3xl  py-8  " key={id}>
+                    <h1 className="text-quaternary text-sm font-semibold pl-8 ">{title}</h1>
+                    <div className="grid justify-items-center gap-4 pt-4 px-5">
+                        <img src={image} alt="..." className="object-cover w-[400px] h-[197px] rounded-3xl " />
                         <a href={lien} >
                             <button className="bg-quaternary text-secondary w-36 h-8 rounded-3xl text-xs font-semibold hover:bg-secondary hover:text-quaternary duration-700">voir le projet</button>
                         </a>

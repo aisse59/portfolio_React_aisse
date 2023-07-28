@@ -18,20 +18,26 @@ const Menu = () => {
    const twitterProfilLink = 'https://twitter.com/aisse59';
    const linkedinProfilLink = 'https://www.linkedin.com/in/a%C3%AFss%C3%A9-camara-468a97215';
 
-   const [activeLink, setAtiveLink] = useState();
+   const [linkActive, setLinkActive] = useState();
 
    const handleClick = (name) => {
-    setAtiveLink(name);
+    setLinkActive(name);
+    
    }
 
    useEffect(() => {
+    
     const currentPath = window.location.pathname;
-    if (currentPath === '/accueil') {
-        setAtiveLink('accueil');
-    } else if (currentPath === '/competences') {
-        setAtiveLink('competences');
+    if ( currentPath === '/accueil') {
+        setLinkActive('accueil');
+    } else if ( currentPath === '/competences') {
+        setLinkActive('competences');
+    } else if ( currentPath === '/portfolio') {
+        setLinkActive('portfolio');
+    } else if ( currentPath === '/contact') {
+        setLinkActive('contact');
     }
-   },[]);
+   }, []);
   
 
     return ( 
@@ -48,36 +54,50 @@ const Menu = () => {
         <div className="text-quaternary grid justify-items-center  ">
             <ul className="space-y-9"  >
                 <li > 
-                    <Link to="/accueil" className="flex flex-row gap-8  ">
+                    <Link 
+                        to="/accueil" 
+                        className={ linkActive === "accueil" 
+                        ? 'flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 active'
+                        : 'flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 '}
+                        onClick={() => handleClick('accueil')} 
+                        >
                         <img src={accueil} alt="accueil svg" /> 
                         <span 
-                        className={ activeLink === "accueil" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
-                        onClick={() => handleClick('accueil')} >Accueil</span>
+                        >Accueil</span>
                     </Link>
                 </li>
                 <li > 
-                    <Link to="/competences" className="flex flex-row gap-8  ">
+                    <Link
+                        to="/competences" 
+                        className={ linkActive === "competences" 
+                        ?' flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 active'
+                        : 'flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 '}
+                        onClick={() => handleClick('competences')} 
+                        >
                         <img src={competences} alt="competence svg" /> 
-                        <span 
-                        className={ activeLink === "competences" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
-                        onClick={() => handleClick('competences')} >Compétences</span>
+                        <span >Compétences</span>
                     </Link>
                 </li>
                 <li > 
-                    <Link to="/portfolio" className="flex flex-row gap-8 ">
+                    <Link
+                        to="/portfolio" 
+                        className={ linkActive === "portfolio" 
+                        ?' flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 active'
+                        : 'flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 '}
+                        onClick={() => handleClick('portfolio')} 
+                        >
                         <img src={portfolio} alt="portfolio svg" /> 
-                        <span 
-                         className={ activeLink === "portfolio" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
-                         onClick={() => handleClick('portfolio')} >Portfolio</span>
+                        <span>Portfolio</span>
                     </Link>
                 </li>
                 <li > 
-                    <Link to="/contact" className="flex flex-row gap-8 ">
+                    <Link
+                        to="/contact" 
+                        className={ linkActive === "contact" ?' flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 active': 'flex flex-row gap-8 text-2xl font-semibold hover:text-tertiary duration-700 '}
+                        onClick={() => handleClick('contact')} 
+                        >
                         <img src={contact} alt="contact svg" /> 
-                        <span 
-                         className={ activeLink === "contact" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
-                         onClick={() => handleClick('contact')}
-                        >Contact</span>
+                        <span>Contact</span>
                     </Link>
                 </li>
             </ul>

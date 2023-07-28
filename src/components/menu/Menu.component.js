@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import aisse from '../../images/aisse.jpg';
 import '../../App.css';
@@ -10,12 +10,28 @@ import twitter from '../../icons/Twitter.svg';
 import github from '../../icons/GitHub.svg';
 import linkedin from '../../icons/LinkedIn.svg';
 import copyright from '../../icons/Copyright.svg';
+import './Menu.style.css';
 
 const Menu = () => {
 
    const githubProfilLink = 'https://github.com/aisse59';
    const twitterProfilLink = 'https://twitter.com/aisse59';
    const linkedinProfilLink = 'https://www.linkedin.com/in/a%C3%AFss%C3%A9-camara-468a97215';
+
+   const [activeLink, setAtiveLink] = useState();
+
+   const handleClick = (name) => {
+    setAtiveLink(name);
+   }
+
+   useEffect(() => {
+    const currentPath = window.location.pathname;
+    if (currentPath === '/accueil') {
+        setAtiveLink('accueil');
+    } else if (currentPath === '/competences') {
+        setAtiveLink('competences');
+    }
+   },[]);
   
 
     return ( 
@@ -34,25 +50,34 @@ const Menu = () => {
                 <li > 
                     <Link to="/accueil" className="flex flex-row gap-8  ">
                         <img src={accueil} alt="accueil svg" /> 
-                        <span className="  text-2xl font-semibold hover:text-tertiary duration-700" >Accueil</span>
+                        <span 
+                        className={ activeLink === "accueil" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
+                        onClick={() => handleClick('accueil')} >Accueil</span>
                     </Link>
                 </li>
                 <li > 
                     <Link to="/competences" className="flex flex-row gap-8  ">
                         <img src={competences} alt="competence svg" /> 
-                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Compétences</span>
+                        <span 
+                        className={ activeLink === "competences" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
+                        onClick={() => handleClick('competences')} >Compétences</span>
                     </Link>
                 </li>
                 <li > 
                     <Link to="/portfolio" className="flex flex-row gap-8 ">
                         <img src={portfolio} alt="portfolio svg" /> 
-                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Portfolio</span>
+                        <span 
+                         className={ activeLink === "portfolio" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
+                         onClick={() => handleClick('portfolio')} >Portfolio</span>
                     </Link>
                 </li>
                 <li > 
                     <Link to="/contact" className="flex flex-row gap-8 ">
                         <img src={contact} alt="contact svg" /> 
-                        <span className="text-2xl font-semibold hover:text-tertiary duration-700" >Contact</span>
+                        <span 
+                         className={ activeLink === "contact" ?'text-2xl font-semibold hover:text-tertiary duration-700 active': 'text-2xl font-semibold hover:text-tertiary duration-700 '}
+                         onClick={() => handleClick('contact')}
+                        >Contact</span>
                     </Link>
                 </li>
             </ul>

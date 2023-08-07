@@ -10,6 +10,9 @@ import twitter from '../../icons/Twitter.svg';
 import github from '../../icons/GitHub.svg';
 import linkedin from '../../icons/LinkedIn.svg';
 import copyright from '../../icons/Copyright.svg';
+import menu from '../../icons/Xbox Menu.svg';
+import close from '../../icons/Close.svg';
+
 import './Menu.style.css';
 
 const Menu = () => {
@@ -19,10 +22,15 @@ const Menu = () => {
    const linkedinProfilLink = 'https://www.linkedin.com/in/a%C3%AFss%C3%A9-camara-468a97215';
 
    const [linkActive, setLinkActive] = useState();
+   const [clicked, setClicked] =useState(false);
 
    const handleClick = (name) => {
     setLinkActive(name);
     
+   }
+
+   const handleChange = () => {
+    setClicked(!clicked)
    }
 
    useEffect(() => {
@@ -125,11 +133,18 @@ const Menu = () => {
             <img src={copyright} alt="copyright svg" />
             <span className="text-quaternary text-xs">copyright,Aïssé Camara- 2023</span>
         </div>
+
+    <div id="mobile" onClick={handleChange}>
+        <div id="bar" className={clicked ? 'close-menu' : 'open-menu'}>
+            {clicked ? <img src={close} alt="close" /> : <img src={menu} alt="menu" />}
+        </div>
+    </div>
+           
         </div>
         
-        
       
-
+       
+      
     </nav>
     );
 }

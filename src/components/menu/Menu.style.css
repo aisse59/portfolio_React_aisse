@@ -1,3 +1,15 @@
 .active {
     color: #A6756A;
 }
+ 
+
+#mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+   
+    #mobile {
+        display: block;
+    }
+}

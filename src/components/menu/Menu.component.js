@@ -49,7 +49,8 @@ const Menu = () => {
   
 
     return ( 
-        
+      <>
+      
     <nav id="menu" className="bg-primary w-1/4 h-screen ">
         <div  className="flex flex-col justify-around fixed bg-primary w-1/4 h-screen pb-2">
 
@@ -133,19 +134,19 @@ const Menu = () => {
             <img src={copyright} alt="copyright svg" />
             <span className="text-quaternary text-xs">copyright,Aïssé Camara- 2023</span>
         </div>
-
-    <div id="mobile" onClick={handleChange}>
-        <div id="bar" className={clicked ? 'close-menu' : 'open-menu'}>
-            {clicked ? <img src={close} alt="close" /> : <img src={menu} alt="menu" />}
-        </div>
-    </div>
-           
+  
         </div>
         
       
        
       
     </nav>
+    <div id="mobile" onClick={handleChange}>
+        <div id="bar" className={clicked ? 'close-menu' : 'open-menu'}>
+            {clicked ? <img src={close} alt="close" /> : <img src={menu} alt="menu" />}
+        </div>
+    </div>
+      </>  
     );
 }
  

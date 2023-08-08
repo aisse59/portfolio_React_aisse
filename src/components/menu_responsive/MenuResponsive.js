@@ -48,22 +48,23 @@ const MenuResponsive = () => {
        }, []);   
 
     return ( 
-        <nav id="navbar">
+        <nav >
             {/* MenuResponsive */}
             <div id="mobile" onClick={handleChange}>
                 <div id="bar" className={clicked ? 'close-menu' : 'open-menu'}>
                     {clicked ? <img src={close} alt="close" /> : <img src={menu} alt="menu" />}
                 </div>
             </div>
-            {/* div image et nom,prenom */}
+          
+
+            {/* liste naviagation */}
+            <div id="navbar" className={clicked ? "#navbar active" : "#navbar"}  >
+                  {/* div image et nom,prenom */}
             <div className="grid justify-items-center gap-8 ">
                 <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4" />
                 <h1 className=" text-center text-quaternary font-semibold text-4xl mb-12" >Aïssé Camara</h1>
             </div>
-
-            {/* liste naviagation */}
-            <div className="text-quaternary grid justify-items-center  ">
-                <ul className={clicked ? "active" : "#navbar"}   >
+                <ul>
                     <li > 
                         <Link 
                             to="/accueil" 
@@ -112,8 +113,6 @@ const MenuResponsive = () => {
                         </Link>
                     </li>
                 </ul>
-            </div>
-
                 {/* RESEAUX SOCIAUX */}
             <div className="flex flex-row justify-around mt-20 mb-5">
                 <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
@@ -132,6 +131,8 @@ const MenuResponsive = () => {
                     </a>
                 </div>
             </div>
+            </div>
+
         </nav>
 
      );

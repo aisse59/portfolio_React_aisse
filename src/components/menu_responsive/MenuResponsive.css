@@ -1,3 +1,5 @@
+
+
 #mobile {
     display: none;
 }
@@ -7,20 +9,42 @@
 }
 
 @media screen and (max-width: 1024px) {
-   
+    
     #mobile {
         display: block;
+        cursor: pointer;
+        
+
+     
+       
+        
+        
     }
+    .close-menu{
+       position: absolute;
+       right: 210px;
+       top: 10px;
+       
+       z-index: 1;
+       height: 30px;
+       width: 30px;
+   }  
 
     #navbar {
         display: block;
         position: fixed;
         background:  #02000D;
+        top: 0px;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        transition: 0.3s ease-in-out;
        
     }
 
    #navbar.active {
-    right: 0px;
+    left: 0px;
+    transition: 0.3s ease-in-out;
    }
 
 

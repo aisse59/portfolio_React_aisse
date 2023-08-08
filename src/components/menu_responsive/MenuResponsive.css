@@ -2,33 +2,38 @@
 
 #mobile {
     display: none;
+   
 }
 
 #navbar {
     display: none;
 }
 
+
+
 @media screen and (max-width: 1024px) {
     
     #mobile {
         display: block;
         cursor: pointer;
+        margin-left: 20px;
         
-
-     
        
-        
-        
     }
-    .close-menu{
+
+    .close-menu-close{
        position: absolute;
-       right: 210px;
+       right: 10px;
        top: 10px;
        
-       z-index: 1;
+      
        height: 30px;
        width: 30px;
+       transition: 0.10s ease-out;
+       
    }  
+
+   
 
     #navbar {
         display: block;
@@ -41,10 +46,12 @@
         transition: 0.3s ease-in-out;
        
     }
+   
 
    #navbar.active {
     left: 0px;
-    transition: 0.3s ease-in-out;
+    
+    
    }
 
 

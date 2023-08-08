@@ -59,6 +59,11 @@ const MenuResponsive = () => {
 
             {/* liste naviagation */}
             <div id="navbar" className={clicked ? "#navbar active" : "#navbar"}  >
+            <div id="mobile" onClick={handleChange}>
+                <div id="bar" className={clicked ? 'close-menu-close': 'open-menu-open'}>
+                    {clicked ? <img src={close} alt="close" /> : <img src={menu} alt="menu" />}
+                </div>
+            </div>
                   {/* div image et nom,prenom */}
             <div className="grid justify-items-center gap-8 ">
                 <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4" />

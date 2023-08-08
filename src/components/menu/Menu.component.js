@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import aisse from '../../images/aisse.jpg';
 import '../../App.css';
+import aisse from '../../images/aisse.jpg';
 import accueil from '../../icons/Home.svg';
 import competences from '../../icons/Competences.svg';
 import portfolio from '../../icons/Portfolio.svg';
@@ -10,8 +10,7 @@ import twitter from '../../icons/Twitter.svg';
 import github from '../../icons/GitHub.svg';
 import linkedin from '../../icons/LinkedIn.svg';
 import copyright from '../../icons/Copyright.svg';
-import menu from '../../icons/Xbox Menu.svg';
-import close from '../../icons/Close.svg';
+
 
 import './Menu.style.css';
 
@@ -22,16 +21,14 @@ const Menu = () => {
    const linkedinProfilLink = 'https://www.linkedin.com/in/a%C3%AFss%C3%A9-camara-468a97215';
 
    const [linkActive, setLinkActive] = useState();
-   const [clicked, setClicked] =useState(false);
+   
 
    const handleClick = (name) => {
     setLinkActive(name);
     
    }
 
-   const handleChange = () => {
-    setClicked(!clicked)
-   }
+   
 
    useEffect(() => {
     
@@ -49,7 +46,6 @@ const Menu = () => {
   
 
     return ( 
-      <>
       
     <nav id="menu" className="bg-primary w-1/4 h-screen ">
         <div  className="flex flex-col justify-around fixed bg-primary w-1/4 h-screen pb-2">
@@ -141,12 +137,8 @@ const Menu = () => {
        
       
     </nav>
-    <div id="mobile" onClick={handleChange}>
-        <div id="bar" className={clicked ? 'close-menu' : 'open-menu'}>
-            {clicked ? <img src={close} alt="close" /> : <img src={menu} alt="menu" />}
-        </div>
-    </div>
-      </>  
+    
+     
     );
 }
  

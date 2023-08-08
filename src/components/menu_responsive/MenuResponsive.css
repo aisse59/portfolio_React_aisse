@@ -1,0 +1,27 @@
+#mobile {
+    display: none;
+}
+
+#navbar {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+   
+    #mobile {
+        display: block;
+    }
+
+    #navbar {
+        display: block;
+        position: fixed;
+        background:  #02000D;
+       
+    }
+
+   #navbar.active {
+    right: 0px;
+   }
+
+
+}

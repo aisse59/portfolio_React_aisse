@@ -10,6 +10,7 @@ import Diplome from "./components/diplome/Diplome";
 import Experiences from "./components/experiences/Experiences";
 import Contact from "./pages/Contact";
 import "./responsive.css";
+import MenuResponsive from "./components/menu_responsive/MenuResponsive";
 
 
 
@@ -24,6 +25,7 @@ function App() {
     <div className="flex-1 bg-cover bg-black h-screen " style={{backgroundImage: `url(${ImgBG})`,  overflowY: 'auto'}}>
         {/* background opacity */}
         <div className="inset-0 bg-opacity-50 bg-black h-screen" style={{ overflowY: 'auto'}}>
+          <MenuResponsive/>
           <Routes>
             <Route exact path="/" element={<Navigate replace to="/accueil" />} />
             <Route path="/accueil" element={<Home/>}/> 

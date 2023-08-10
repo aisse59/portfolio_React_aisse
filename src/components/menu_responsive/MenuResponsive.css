@@ -53,15 +53,14 @@
    
    
 
-   #navbar.active {
+   #navbar.act {
     left: 0px;
     
     
    }
+   
+}
 
-   #navbar.active {
-    color: #A6756A;
-   }
-   
-   
+li {
+    color: #D9BD9C;
 }

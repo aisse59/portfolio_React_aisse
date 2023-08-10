@@ -59,7 +59,7 @@ const MenuResponsive = () => {
           
 
             {/* liste naviagation */}
-            <div id="navbar" className={clicked ? "#navbar active" : "#navbar"}  >
+            <div id="navbar" className={clicked ? "#navbar act" : "#navbar"}  >
             <div id="mobile" onClick={handleChange}>
                 <div id="bar" className={clicked ? 'close-menu-close': 'open-menu-open'}>
                     {clicked ? <img src={close} alt="close" /> : <img src={menu} alt="menu" />}

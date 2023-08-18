@@ -54,11 +54,11 @@ const Experiences = () => {
                 <p className="text-xs md:text-base font-semibold text-primary">Formation de développeur web et web mobile</p>
                 <p className="text-xs md:text-sm font-semibold mt-2 italic text-primary">Centre de formation Afpa de roubaix</p>
                 <ul className="text-xs md:text-sm leading-snug tracking-wide text-primary text-opacity-100 px-2 pt-2">
-                <li className="font-normal list-disc ">Création d'un projet complet en utilisant le framework Symfony pour le développement back-end</li>
-                <li className="font-normal list-disc ">
+                <li className="font-normal list-disc text-primary">Création d'un projet complet en utilisant le framework Symfony pour le développement back-end</li>
+                <li className="font-normal list-disc text-primary">
                   Manipulation avancée de bases de données (BDD) pour assurer la gestion et le stockage des informations
                 </li>
-                <li className="font-normal list-disc">
+                <li className="font-normal list-disc text-primary">
                   Utilisation du framework Bootstrap pour le développement du front-end et l'optimisation de l'interface utilisateur
                 </li>
               </ul>
@@ -101,12 +101,12 @@ const Experiences = () => {
                     <p className="text-xs md:text-base  font-semibold text-primary">Formation Webmaster</p>
                     <p className="text-xs md:text-sm mt-2 font-semibold italic text-primary">En mode formation</p>
                 <ul className="text-xs md:text-sm leading-snug tracking-wide text-primary text-opacity-100 px-2 pt-2">
-                    <li className="font-normal list-disc ">Maîtrise de la création de sites WordPress </li>
-                    <li className="font-normal list-disc ">Capacité à définir un plan de site clair</li>
-                    <li className="font-normal list-disc ">Configuration avancée des modules de paiement </li>
-                    <li className="font-normal list-disc ">Maîtrise des outils et des plugins spécifiques à WordPress</li>
-                    <li className="font-normal list-disc ">Maîtrise de l'envoi de mails et configuration des serveurs de messagerie et des formulaires de contact</li>
-                    <li className="font-normal list-disc ">Référencement SEO pour optimiser la visibilité et le classement du site dans les moteurs de recherche</li>
+                    <li className="font-normal list-disc text-primary">Maîtrise de la création de sites WordPress </li>
+                    <li className="font-normal list-disc text-primary">Capacité à définir un plan de site clair</li>
+                    <li className="font-normal list-disc text-primary">Configuration avancée des modules de paiement </li>
+                    <li className="font-normal list-disc text-primary">Maîtrise des outils et des plugins spécifiques à WordPress</li>
+                    <li className="font-normal list-disc text-primary">Maîtrise de l'envoi de mails et configuration des serveurs de messagerie et des formulaires de contact</li>
+                    <li className="font-normal list-disc text-primary">Référencement SEO pour optimiser la visibilité et le classement du site dans les moteurs de recherche</li>
                 </ul>
            </div>
          </div>

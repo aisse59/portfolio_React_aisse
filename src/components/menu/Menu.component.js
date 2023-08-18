@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import '../../App.css';
-import aisse from '../../images/aisse.jpg';
+import aisse from '../../images/aisseee.jpg';
 import accueil from '../../icons/Home.svg';
 import competences from '../../icons/Competences.svg';
 import portfolio from '../../icons/Portfolio.svg';
@@ -52,7 +52,7 @@ const Menu = () => {
 
         {/* div image et nom,prenom */}
         <div className="grid justify-items-center gap-8 ">
-            <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4" />
+            <img src={aisse} alt="aisse" className="w-40 h-40 border-4 rounded-full  border-quaternary object-cover mt-4 object-cover" />
             <h1 className=" text-center text-quaternary font-semibold text-4xl mb-12" >Aïssé Camara</h1>
         </div>
         {/* liste naviagation */}

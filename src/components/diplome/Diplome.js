@@ -48,8 +48,8 @@ const Diplome
              <img src={calendar} alt="calendar" />
               2012</h3>
             <ul className="text-sm font-medium leading-snug tracking-wide text-primary text-opacity-100">
-               <li className="font-semibold">BTS Assistant de Manager</li>
-               <li className="font-semibold  italic">Lycée Jean Moulin à Roubaix</li>
+               <li className="font-semibold text-primary">BTS Assistant de Manager</li>
+               <li className="font-semibold  italic text-primary">Lycée Jean Moulin à Roubaix</li>
             </ul>
            </div>
          </div>

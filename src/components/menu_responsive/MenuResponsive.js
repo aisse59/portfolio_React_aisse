@@ -122,18 +122,18 @@ const MenuResponsive = () => {
                 </ul>
                     
                     {/* RESEAUX SOCIAUX */}
-                <div className="flex flex-row gap-5 justify-around mt-12 mb-5">
-                    <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
+                <div className="flex flex-row gap-5 justify-around py-8 ">
+                    <div className="w-11 h-11 bg-quaternary rounded-full grid place-items-center ">
                         <a href={githubProfilLink} target="_blank" rel="noopener noreferrer">
                             <img src={github} alt="github svg"  />
                         </a>
                     </div>
-                    <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
+                    <div className="w-11 h-11 bg-quaternary rounded-full grid place-items-center ">
                         <a href={twitterProfilLink} target="_blank" rel="noopener noreferrer">
                             <img src={twitter} alt="twitter svg" />
                         </a>
                     </div>
-                    <div className="w-14 h-14 bg-quaternary rounded-full grid place-items-center ">
+                    <div className="w-11 h-11 bg-quaternary rounded-full grid place-items-center ">
                         <a href={linkedinProfilLink} target="_blank" rel="noopener noreferrer">
                             <img src={linkedin} alt="linkedin svg" />
                         </a>

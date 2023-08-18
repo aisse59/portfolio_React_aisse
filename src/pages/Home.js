@@ -11,10 +11,10 @@ const Home = () => {
     }
     
     return ( 
-               <div className="flex flex-col justify-center gap-12 h-screen ">
+               <div className="pt-5 flex flex-col  gap-10 h-screen ">
 
                     {/* block nom,prénom et fonction */}
-                    <div className="ml-10">
+                    <div className="ml-10 ">
                         <h1 className="text-quaternary text-2xl md:text-4xl font-normal" >
                             Aïssé Camara
                         </h1>
@@ -28,9 +28,11 @@ const Home = () => {
                             Bienvenue dans mon portfolio en tant que développeuse web passionnée ! Je suis dévouée à créer des expériences en ligne uniques et fonctionnelles. Parcourez mes projets variés qui allient créativité, code et innovation. Je suis ravie de partager avec vous mon parcours et mes compétences techniques. Préparez-vous à plonger dans le monde dynamique du développement web !  
                         </p>
                     </div>
-                    <button onClick={handleDowload} className="w-64 h-20 bg-quaternary rounded-3xl shadow-md text-secondary font-semibold text-xl  ml-10 hover:bg-secondary hover:text-quaternary duration-700" >
+                    <div>
+                    <button  onClick={handleDowload} className="w-64 h-20 bg-quaternary rounded-3xl shadow-md text-secondary font-semibold text-xl  ml-10 hover:bg-secondary hover:text-quaternary duration-700 " >
                         Télécharger mon CV
                     </button>
+                    </div>
                </div>
             
         

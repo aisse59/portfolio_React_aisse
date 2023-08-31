@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import '../../App.css';
-import aisse from '../../images/aisseee.jpg';
+import aisse from '../../images/profil_aisse.png';
 import accueil from '../../icons/Home.svg';
 import competences from '../../icons/Competences.svg';
 import portfolio from '../../icons/Portfolio.svg';
